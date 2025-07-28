@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bgc-color:#001122;
+   
+    --primary-background:linear-gradient(to top, #b26262, #994c66, #773c69, #4c3267, #082a5e);
+    --border-radius:0.8vw;
+    --border-color:#7fb7c9;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to top, #cb9a4d, #c46952, #a24463, #66346a, #082a5e);
+    
+   
+}
+.main{
+    width:400px;
+    background:linear-gradient(to top, #cb9a4d, #c46952, #a24463, #66346a, #082a5e);
+    padding:30px;
+    border-radius: var(--border-radius);
+    
+
+
+}
+.Qr-header h1{
+     font-size: 30px;
+     text-align: center;
+    margin-bottom: 22px;
+    text-transform:uppercase;
+    color:#999;
+
+}
+.Qr-header input{
+    width: 100%;
+     margin-block: 12px;
+}
+.Qr-header input,select{
+    padding: 8px;
+    border-radius: var(--border-radius);
+    font-size: 18px;
+    outline: none;
+    border: 2px solid var(--border-color);
+   
+
+}
+.Qr-header label{
+    color: white;
+    font-size:20px;
+}
+.Qr-header div{
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.Qr-footer a{
+    background-color: white;
+    font-style:none;
+   text-decoration:none;
+   font-size:20px;
+   padding:13px 33px;
+   margin-inline:2px;
+   color: #001122;
+   border-radius:0.8vw;
+   font-weight: 600;
+   
+
+
+}
+.Qr-footer{
+    display: flex;
+    gap:1.4vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.7vw;
+  }
+/* 
+.Qr-footer a:hover{
+    transform: scale(1.05);
+} */
+
+#Qr-body{
+    display: grid;
+    place-items:center;
+    padding:20px;
+}
+#Qr-body img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-block: 10px;
+    padding: 20px;
+    border: 1px solid #999;
+    border-radius: var(--border-radius);
+}
+
+@media (max-width:555px) {
+    .main{
+    width:300px;
+    background-color: var(--primary-color);
+    padding:9px;
+    border-radius: var(--border-radius);
+    
+}
+.Qr-header input,select{
+    padding: 6px;
+    border-radius: var(--border-radius);
+    font-size: 12px;
+    outline: none;
+    border: 1.5px solid var(--border-color);
+   
+
+}
+.Qr-header label{
+    font-size:15px;
+}
+
+.Qr-footer a{
+    
+   font-size:14px;
+   padding:8px 20px;
+   margin-inline:10px;
+   color: #001122;
+   border-radius:0.8vw;
+   font-weight: 600;
+   
+
+
+}
+
+    
+}
